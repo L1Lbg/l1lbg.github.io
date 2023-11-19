@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="header" onclick="refreshWeb()">WALLPAPER BUDDY</div>
+
+    <div id="categories">
+
+        <div onclick="recommendedRefresh()" id="recommended"class="categoriesOption" style="margin:20px;">RECOMENDED</div>
+        <div onclick="discoverRefresh()"id="discover" class="categoriesOption" style="margin:20px;">DISCOVER</div>
+
+    </div>
+
+    <div id="downloadContainer">       
+
+    </div>
+
+    <div id="downloadedImageContainer">
+
+    </div>
+
+        <div id="search">
+            <input placeholder="Search whatever comes to your mind!" id="searchInput">
+            <div id="searchButton" onclick="search()">
+                <img style="width:80%; height:80%"src="iconImg/search.png">
+            </div>
+        </div>
+
+
+
+    <div id="lowerTop">
+
+
+        <div id="optionsContainer">
+            <div id="gridOptions">
+
+                <div class="gridOptionsInner" onclick="changeGrid(2)">2</div>
+                <div class="gridOptionsInner" onclick="changeGrid(3)">3</div>
+                <div class="gridOptionsInner" onclick="changeGrid(4)">4</div>
+
+            </div>
+        </div>
+
+
+
+        <div id="categoriesContainer">
+            <div onclick="categoriesConstructor()">CATEGORIES</div>
+        </div>
+        
+        <div id="categoriesFilterRemover">
+
+        </div>
+
+    </div>
+
+    <div id="container">
+
+        <div id="preview1" class="wallpaperPreview">
+            <div id="preview1top" class="top"></div>
+            <div id="preview1bottom" class="bottom" onclick="divClicked = 'preview1'; download()"></div>
+        </div>
+
+        <div id="preview2" class="wallpaperPreview">
+            <div id="preview2top" class="top"></div>
+            <div id="preview2bottom" class="bottom" onclick="divClicked = 'preview2'; download()"></div>
+        </div>
+
+        <div id="preview3" class="wallpaperPreview">
+            <div id="preview3top" class="top"></div>
+            <div id="preview3bottom" class="bottom" onclick="divClicked = 'preview3'; download()"></div>
+        </div>
+
+        <div id="preview4" class="wallpaperPreview">
+            <div id="preview4top" class="top"></div>
+            <div id="preview4bottom" class="bottom" onclick="divClicked = 'preview4'; download()"></div>
+        </div>
+
+        <div id="preview5" class="wallpaperPreview">
+            <div id="preview5top" class="top"></div>
+            <div id="preview5bottom" class="bottom" onclick="divClicked = 'preview5'; download()"></div>
+        </div>
+
+        <div id="preview6" class="wallpaperPreview">
+            <div id="preview6top"  class="top"></div>
+            <div id="preview6bottom" class="bottom" onclick="divClicked = 'preview6'; download()"></div>
+        </div>
+
+        <div id="preview7" class="wallpaperPreview">
+            <div id="preview7top" class="top"></div>
+            <div id="preview7bottom" class="bottom" onclick="divClicked = 'preview7'; download()"></div>
+        </div>
+
+        <div id="preview8" class="wallpaperPreview">
+            <div id="preview8top" class="top"></div>
+            <div id="preview8bottom" class="bottom" onclick="divClicked = 'preview8'; download()"></div>
+        </div>
+
+        <div id="preview9" class="wallpaperPreview">
+            <div id="preview9top" class="top"></div>
+            <div id="preview9bottom" class="bottom" onclick="divClicked = 'preview9'; download()"></div>
+        </div>
+
+        <div id="preview10" class="wallpaperPreview">
+            <div id="preview10top" class="top"></div>
+            <div id="preview10bottom" class="bottom" onclick="divClicked = 'preview10'; download()"></div>
+        </div>
+
+        <div id="preview11" class="wallpaperPreview">
+            <div id="preview11top" class="top"></div>
+            <div id="preview11bottom" class="bottom" onclick="divClicked = 'preview11'; download()"></div>
+        </div>
+
+        <div id="preview12" class="wallpaperPreview">
+            <div id="preview12top" class="top"></div>
+            <div id="preview12bottom" class="bottom" onclick="divClicked = 'preview12'; download()"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
