@@ -214,14 +214,16 @@ body{
 #page5-grid{
   display:grid;
   grid-template-columns: repeat(2, auto);
+  place-items: center;
 }
 #page5-grid > div{
-  border:solid 1px white;
   border-radius: 15px;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-}
-#page5-grid > div > h2 > a{
-  color:#0004f0
+  background: linear-gradient(to right, #0012B1, #560344);
+  width:30vw;
+  height:30vw;
+  padding:3%;
+  line-height: 182.16%; /* 27.324px */
+  letter-spacing: 2.55px;
 }
 #page5-grid > div > div{
   display:grid;
@@ -229,11 +231,28 @@ body{
   grid-template-columns: repeat(2, auto);
 }
 #page5-grid > div > div > img, #page5-grid > div > div > iframe{
-  width:100%;
-  height:100%;
-  border-radius:15px;
-  border:solid 1px white;
+  max-height:100%;
+  max-width: 100%;
+  border-radius: 15px;
+  border:solid 1px grey;
 }
+#page5-grid > div > h3 > div{
+  display: flex;
+  align-items: center;
+}
+#page5-grid > div > p{
+  font-weight: lighter;
+}
+#page5-grid > div > h3 > div > img{
+  width:15%;
+  height:15%;
+}
+#page5-grid > div > h3 > div > a{
+  text-decoration: underline;
+  color:white;
+  font-weight: lighter;
+}
+
 .lava-container{
   position:relative;
   width:100%;
@@ -396,7 +415,6 @@ body{
   }
 
 
-  
   #page5-grid{
     display:block;
     margin:auto;
@@ -405,6 +423,8 @@ body{
   }
   #page5-grid > div{
     margin-top:5vh;
+    width:100%;
+    height:fit-content;
   }
   #page5-grid > div > div{
     display:block;
@@ -529,19 +549,22 @@ body{
   #page5-grid{
     display:block;
     margin:auto;
-    width:80vw;
+    width:70vw;
     font-size:30px;
   }
   #page5-grid > div{
     margin-top:5vh;
+    width:100%;
+    height:fit-content
   }
   #page5-grid > div > div{
+    display:block;
     padding:30px;
     width:70vw;
     margin:auto;
   }
-  #page5-grid > div > div > iframe{
-    height:50vh;
+  #page5-grid > div > div > iframe, #page5-grid > div > div > img{
+    max-width: 50%;
   }
   #page5-title{
     font-size:80px;
