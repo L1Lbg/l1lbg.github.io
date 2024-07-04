@@ -63,7 +63,17 @@ body{
   justify-content:center;
   align-items:center;
 }
-
+#page1-contact-me{
+  position: absolute;
+  font-size: 50px;
+  color:white;
+  left:0;
+  top:0;
+  margin: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
