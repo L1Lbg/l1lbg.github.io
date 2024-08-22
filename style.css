@@ -181,11 +181,11 @@ body {
   margin: auto;
   font-weight: bold;
   text-decoration: underline;
+  font-size: 2rem;
 }
 #skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
 }
 
 #skills-container > div {
@@ -201,6 +201,10 @@ body {
 .building-img {
   height: 40vh;
 }
+#skills-container > div > img{
+  object-fit: contain;
+  max-width: 15vw;
+}
 
 #page4 {
   background: linear-gradient(180deg, #006216, #111111);
@@ -209,7 +213,16 @@ body {
   text-align: left;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight:lighter;
+}
+#page4-title {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  width: fit-content;
+  margin: auto;
   font-weight: bold;
+  text-decoration: underline;
+  font-size: 2rem;
 }
 #page4-grid {
   display: grid;
@@ -222,12 +235,34 @@ body {
   border-radius: 15px;
   text-align: center;
   background: radial-gradient(green, darkgreen);
-  animation-name: grow;
+  /* animation-name: grow;
   animation-iteration-count: infinite;
-  animation-duration: 10s;
+  animation-duration: 10s; */
+  max-width: 400px;
+  aspect-ratio: 4/3;
+  padding: 30px;
 }
 #page4-grid > div > img {
-  animation: slightRotate 5s infinite;
+  /* animation: slightRotate 5s infinite; */
+  max-width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+#bracket-container{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#bracket {
+  rotate: 90deg;
+  position: relative;
+  translate: 4.5vw;
+  scale: 40;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 #page5 {
@@ -250,11 +285,11 @@ body {
 #page5-grid > div {
   border-radius: 15px;
   background: linear-gradient(to right, #0012b1, #560344);
-  width: 30vw;
-  height: 30vw;
+  aspect-ratio: 1/1;
+  width: 32vw;
   padding: 3%;
-  line-height: 182.16%; /* 27.324px */
-  letter-spacing: 2.55px;
+  line-height: 180%; 
+  letter-spacing: 2.5px;
 }
 #page5-grid > div > div {
   display: grid;
@@ -316,8 +351,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-#page6 > div > cite {
+#page6 > div > p {
   font-weight: lighter;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: auto;
+  width: 80vw;
 }
 #page6 > div > ul {
   text-align: left;
@@ -362,6 +401,12 @@ body {
   #page1 {
     font-size: 75px;
   }
+  #page1-contact-me{
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+    width: 100vw;
+  }
 
   .language {
     font-size: 50px;
@@ -400,49 +445,39 @@ body {
     border-radius: 15px;
     padding: 15px;
   }
+  #skills-container > div > img{
+    max-width: 30vw;
+  }
   .building-img {
     display: none;
-  }
-  #react {
-    width: 150px;
-  }
-  #html-css {
-    width: 300px;
-  }
-  #web-server > div > img {
-    width: 200px;
-  }
-  #database {
-    width: 320px;
   }
 
   #page4 {
     font-size: 23px;
-  }
-  #bracket {
-    width: 90vw;
   }
   #page4-grid {
     display: block;
   }
   #page4-grid > div {
     margin: auto;
-    width: 50vw;
+    width: 70vw;
     height: 40vh;
     padding: 15px;
     margin-top: 15vh;
   }
+  #bracket-container{
+    display: none;
+  }
 
   #page5-grid {
     display: block;
-    margin: auto;
-    width: 80vw;
     font-size: 20px;
   }
   #page5-grid > div {
-    margin-top: 5vh;
-    width: 100%;
+    width: 80%;
     height: fit-content;
+    margin: auto;
+    margin-top: 7.5vh;
   }
   #page5-grid > div > div {
     display: block;
@@ -459,11 +494,13 @@ body {
 
   #page6 > img {
     width: 150px;
+    margin-top: 5vh;
   }
 
   #page6-title {
     font-size: 50px;
     word-wrap: break-word;
+    padding-top: 15vh;
   }
   #page6 > div > div {
     display: block;
@@ -547,6 +584,9 @@ body {
   }
   #page4-grid {
     display: block;
+  }
+  #bracket-container{
+    display: none;
   }
   #page4-grid > div {
     margin: auto;
@@ -653,14 +693,12 @@ body {
   #page4 {
     font-size: 20px;
   }
-  #bracket {
-    width: 500px;
-  }
   #page4-grid > div {
     width: 200px;
     height: 150px;
     padding: 50px;
   }
+  
 
   #page5-grid {
     grid-gap: 150px;
@@ -743,9 +781,6 @@ body {
 
   #page4 {
     font-size: 30px;
-  }
-  #bracket {
-    width: 500px;
   }
   #page4-grid > div > img {
     width: 300px;

@@ -81,12 +81,12 @@ img {
   inset: 0;
   z-index: -1;
 }
-#username-input:hover ~ #username-img {
+/* #username-input:hover ~ #username-img {
   transform: rotate(360deg);
 }
 #password-input:hover ~ #password-img {
   transform: rotate(360deg);
-}
+} */
 #remember-me-checkbox:hover{
   cursor: pointer;
 }

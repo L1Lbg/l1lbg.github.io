@@ -99,7 +99,7 @@ img {
 #submit-input:hover {
   outline: solid 1px;
 }
-#username-input:hover ~ #username-img {
+/* #username-input:hover ~ #username-img {
   transform: rotate(360deg);
 }
 #password-input:hover ~ #password-img {
@@ -110,7 +110,7 @@ img {
 }
 #email-input:hover ~ #email-img {
   transform: rotate(360deg);
-}
+} */
 #logo-container {
   display: flex;
   align-items: center;
